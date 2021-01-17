@@ -7,25 +7,39 @@
       rel="stylesheet"
       href="https://bootswatch.com/4/superhero/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>GitHub Finder</title>
   </head>
   <body>
     <!--NavBar-->
-    <nav nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand">GitHub Finder</a>
+    <nav
+      nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center"
+    >
+      <a class="navbar-brand"
+        ><i class="fas fa-code-branch mr-2"></i>GitHub Finder
+        <i class="fab fa-github ml-2"></i
+      ></a>
     </nav>
 
-    <div class="container searchcontainer">
+    <div class="container">
       <div class="card text-white bg-primary mb-3 m-4" style="max-width: 50rem">
         <div class="card-header"></div>
         <div class="card-body">
-          <h4 class="card-title">Search for GitHub Accounts</h4>
-          <p class="card-text">
-            | Enter a username and find a profile with their work |
+          <h3 class="card-title text-center">Search for GitHub Accounts</h3>
+          <p class="card-text text-center">
+            | Enter a username and find a profile with their work and account
+            information |
           </p>
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">| Username: |</label>
+          <label for="username"
+            ><i class="fas fa-user-circle fa-lg m-2"></i>| Username: |</label
+          >
           <input
             type="userName"
             class="form-control"
@@ -33,11 +47,20 @@
             aria-describedby="emailHelp"
             placeholder="JoeCoder567"
           />
+          <div class="text-center">
+            <button id="search" type="button" class="btn btn-secondary m-2">
+              Search
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    <br />
+    <div id="profile"></div>
 
-    <footer class="mt-5 p-3 text-center bg-primary">GitHub Finder</footer>
+    <footer id="footer" class="mt-5 p-3 text-center bg-primary">
+      GitHub Finder
+    </footer>
 
     <!--Scipt Tags-->
     <script
