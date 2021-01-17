@@ -18,7 +18,7 @@ class UI {
             <span class="badge badge-info">Following: ${user.following}</span>
             <br><br>
             <ul class="list-group">
-            <li class="list-group-item text-center text-primary h4 "> ${user.name}</li>
+            <li class="list-group-item text-center h3 "> ${user.name}</li>
             <li class="list-group-item text-primary text-center"> ${user.bio}</li>
               <li class="list-group-item">Company:<span class="text-primary"> ${user.company}</span></li>
               <li class="list-group-item">Website/Blog: <a href="https://${user.blog}" target="_blank">${user.blog}</a></li>
@@ -30,5 +30,19 @@ class UI {
       </div>
       <h3 class="page-heading mb-3 text-center">Latest Repos</h3>
       <div id="repos"></div> `;
+  }
+
+  showRepos(repos) {
+    let repoData = "";
+    repos.map((repo) => {
+      repoData += `
+        Repo Name: ${repo.name}
+        Owner: ${repo.owner.login}
+        Description: ${repos.description}
+        Link: ${repo.url}
+        `;
+    });
+    const repoUI = document.querySelector("#repos");
+    repoUI.innerHTML = repoData;
   }
 }

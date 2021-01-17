@@ -20,6 +20,7 @@ function searchInput(e) {
         //Show alert
       } else {
         Ui.showProfile(data.profile);
+        Ui.showRepos(data.repos);
       }
     });
   } else {
