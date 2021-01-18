@@ -4,7 +4,7 @@ class Github {
   constructor() {
     this.client_id = "430d0e36bc53686e2d69";
     this.client_secret = "b3bbdefff92e358305d2bbc593fb616a054ade52";
-    this.repoCount = 5;
+    this.repoCount = 7;
     this.latest = "create: asc";
   }
 
@@ -15,7 +15,7 @@ class Github {
     );
     //repos request
     const repoResponse = await fetch(
-      `https://api.github.com/users/${user}/repos?per_page${this.repoCount}&sort=${this.latest}&client_id=${this.client_id}&client_secret=${this.client_secret}`
+      `https://api.github.com/users/${user}/repos?per_page=${this.repoCount}&sort=${this.latest}&client_id=${this.client_id}&client_secret=${this.client_secret}`
     );
     //await response
     const profile = await proflieResponse.json();

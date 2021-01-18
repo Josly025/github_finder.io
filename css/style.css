@@ -13,3 +13,13 @@ body {
   height: 80px;
   width: 100%;
 }
+
+#search {
+  border-radius: 5px;
+}
+/* 
+/* .centered {
+  margin-right: 20%;
+  margin-left: 20%;
+  text-align: center;
+} */
