@@ -1,6 +1,6 @@
 ### Title \*\*\*\*
 
-** Movie Search **
+** GitHub Finder **
 
 ![GitHub_Finder](./images/github_finder.png)
 
